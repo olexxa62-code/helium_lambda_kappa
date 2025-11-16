@@ -27,13 +27,13 @@ Liquid helium-4 at vapor pressure undergoing λ-transition from normal fluid (He
 
 ### Topological Order
 - τ = ρ_s/ρ (superfluid density fraction, canonical order parameter)
-- τ(t) ∝ t^ζ with ζ = 0.6705 ± 0.0006
+- τ(t) ∝ t^ζ with ζ = 0.6705 ± 0.0006 (experimental)
 - τ = 0 for T > T_λ (normal phase)
 - τ > 0 for T < T_λ (superfluid phase)
 
 ### Correlation
 - Λ = ξ (correlation length of thermal fluctuations)
-- Λ(t) ∝ t^(-ν) with ν = 0.667 (≈ 2/3)
+- Λ(t) ∝ t^(-ν) with ν ≈ 2/3
 - Λ → ∞ as T → T_λ (critical divergence)
 - Λ_c = ξ evaluated at reference point
 
@@ -78,20 +78,35 @@ As temperature decreases below T_λ:
 ### Experimental Data
 
 **Lipa, J. A., Nissen, J. A., Stricker, D. A., Swanson, D. R., & Chui, T. C. P.** (2003). Specific heat of liquid helium in zero gravity very near the lambda point. *Physical Review B*, **68**, 174518. arXiv:cond-mat/0310163
-- Measured α = -0.0127 ± 0.0003
+
+- Measured α = -0.0127 ± 0.0003 (Table II, direct measurement)
 - Space-based experiment, highest precision to date
+- Temperature resolution: 2 nanokelvin
+- Table I compiles experimental and theoretical values from literature
 
-### Superfluid Density Measurements
+### Critical Exponents
 
-**Goldner, L. S., Mulders, N., & Ahlers, G.** (1992). Second sound very near T_λ. *Journal of Low Temperature Physics*, **93**, 131-182.
-- Measured ζ = 0.6705 ± 0.0006
-- Most precise determination of superfluid density exponent
+**From Lipa et al. (2003), Table I:**
+
+**ζ = 0.6705 ± 0.0006** (experimental, "Observed")
+- Source: Goldner, L. S., Mulders, N., & Ahlers, G. (1992), as cited in Lipa Table I, Reference [18]
+- Most precise experimental determination of superfluid density exponent
+- Original: *Journal of Low Temperature Physics*, **93**, 131-182
+
+**ν ≈ 2/3 (= 0.667)** (theoretical approximation)
+- Standard value for 3D XY universality class
+- Used by Lipa et al. in text for correlation length: ξ ∝ t^(-2/3)
+- Precise theoretical value: ν = 0.67155(27) from Campostrini et al. (2001)
 
 ### Theoretical Framework
 
-**Campostrini, M., Hasenbusch, M., Pelissetto, A., Rossi, P., & Vicari, E.** (2001). Critical exponents and equation of state of the three-dimensional Heisenberg universality class. *Physical Review B*, **63**, 214503.
-- RG predictions for 3D XY model (n=2, D=3)
-- Theoretical value ν ≈ 2/3
+**Campostrini, M., Hasenbusch, M., Pelissetto, A., Rossi, P., & Vicari, E.** (2001). Critical behavior of the three-dimensional XY universality class. *Physical Review B*, **63**, 214503. arXiv:cond-mat/0010360
+
+- RG calculations for 3D XY model (n=2, D=3)
+- Theoretical predictions cited in Lipa Table I, Reference [8]:
+  - α (predicted) = -0.0146 ± 0.0008
+  - ζ (predicted) = 0.67015 ± 0.00027
+- Confirms λ-transition belongs to XY universality class
 
 ### Analysis
 
@@ -104,7 +119,7 @@ As temperature decreases below T_λ:
 ## Justification for Parameters
 
 ### T_λ = 2.1768 K
-Standard value for liquid 4He at vapor pressure (SVP). Measured to 9 significant figures.
+Standard value for liquid 4He at vapor pressure (SVP). Measured to 9 significant figures. Used throughout Lipa et al. (2003).
 
 ### Critical Point Determination
 T_λ is independently known from:
@@ -113,16 +128,22 @@ T_λ is independently known from:
 3. Thermal conductivity jump
 4. Second sound appearance
 
-### ζ = 0.6705
+### ζ = 0.6705 (Experimental)
+**Source**: Goldner et al. (1992), as cited in Lipa et al. (2003), Table I, Reference [18]
+
 Measured from second sound velocity v_2^2 ∝ ρ_s. Scaling: ρ_s ∝ |t|^ζ near T_λ. Direct experimental determination with 0.09% precision.
 
-### ν = 0.667 ≈ 2/3
+**Note**: Theoretical prediction ζ = 0.67015 ± 0.00027 (Campostrini, 2001) differs slightly from experimental value.
+
+### ν ≈ 2/3 (Theoretical Approximation)
+**Source**: Standard approximation used by Lipa et al. in text
+
 Determined from:
 1. Correlation length: ξ ∝ |t|^(-ν)
 2. Specific heat: C_p ∝ |t|^(-α) with α = 2 - 3ν (for D=3, n=2)
-3. RG calculations (4-loop, high precision)
+3. RG calculations: ν = 0.67155(27) (Campostrini et al., 2001)
 
-The value ν = 2/3 is particularly robust, approaching an exact result in certain approximations.
+The value ν = 2/3 is particularly robust, used as convenient approximation throughout literature.
 
 ---
 
@@ -155,6 +176,20 @@ Both τ and Λ are temperature-dependent with nearly equal exponents (ζ ≈ ν)
 
 ---
 
+## Experimental vs Theoretical Values
+
+### Table: Comparison
+
+| Parameter | Experimental | Source | Theoretical | Source |
+|-----------|-------------|--------|-------------|--------|
+| α | -0.0127 ± 0.0003 | Lipa (2003) Table II | -0.0146 ± 0.0008 | Campostrini (2001) |
+| ζ | 0.6705 ± 0.0006 | Goldner (1992) | 0.67015 ± 0.00027 | Campostrini (2001) |
+| ν | - | - | 0.67155(27) ≈ 2/3 | Campostrini (2001) |
+
+**Our Analysis Uses**: Experimental ζ (Goldner), approximation ν = 2/3
+
+---
+
 ## Limitations
 
 - Synthetic model uses power laws with measured exponents, not raw C_p(T) data
@@ -172,6 +207,10 @@ All analysis code, synthetic data, and figures available in project repository:
 - Results: `results/kappa_analysis.csv`
 - Figures: `figures/fig*.png` (600 DPI)
 - Methodology: `docs/METHODOLOGY.md`
+
+**References**: Available in `docs/references/`
+- Lipa et al. (2003) - Primary experimental source
+- Campostrini et al. (2001) - Theoretical XY model
 
 ---
 

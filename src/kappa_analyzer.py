@@ -20,19 +20,29 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Emergence parameter κ analysis for He-II λ-transition based on 
-high-precision measurements by Lipa et al. (2003).
+Emergence parameter κ analysis for He-II λ-transition.
+
+Data sources:
+- Critical exponents from Lipa et al. (2003), Physical Review B 68, 174518
+- Experimental values via high-precision space-based measurements
 """
 
 import numpy as np
 import pandas as pd
 import os
 
-# Physical constants
-T_LAMBDA = 2.1768  # K (lambda point at vapor pressure)
-ZETA = 0.6705      # Critical exponent for superfluid density
-NU = 0.667         # Critical exponent for correlation length
-ALPHA = -0.0127    # Specific heat exponent (Lipa et al., 2003)
+# Physical constants and critical exponents
+T_LAMBDA = 2.1768  # K (lambda point at vapor pressure, Lipa et al., 2003)
+
+# Critical exponents (from Lipa et al., 2003, Table I):
+ZETA = 0.6705      # Superfluid density exponent (experimental)
+                   # Goldner et al. (1992) as cited in Lipa Table I, ref [18]
+                   
+NU = 0.667         # Correlation length exponent (≈ 2/3)
+                   # Standard approximation used in Lipa et al. text
+                   
+ALPHA = -0.0127    # Specific heat exponent (experimental)
+                   # Lipa et al. (2003), Table II, direct measurement
 
 class HeliumLambdaAnalyzer:
     """Analyzer for emergence parameter κ in He-II λ-transition."""
@@ -258,9 +268,11 @@ class HeliumLambdaAnalyzer:
             f.write("System A.3: He-II λ-Transition - κ Analysis Summary\n")
             f.write("="*60 + "\n\n")
             f.write(f"Lambda Point: T_λ = {self.T_lambda:.4f} K\n\n")
-            f.write("Critical Exponents:\n")
+            f.write("Critical Exponents (from Lipa et al., 2003):\n")
             f.write(f"  ζ (superfluid density) = {ZETA:.4f}\n")
+            f.write(f"    Source: Goldner et al. (1992), Table I ref [18]\n")
             f.write(f"  ν (correlation length) = {NU:.3f}\n")
+            f.write(f"    Source: Approximation 2/3, as used in Lipa text\n")
             f.write(f"  ζ - ν = {ZETA - NU:.4f}\n\n")
             f.write("Theoretical Result:\n")
             f.write(f"  κ ∝ t^(ζ-ν) = t^{ZETA - NU:.4f}\n\n")

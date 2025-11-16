@@ -68,12 +68,19 @@ First demonstration of κ ≈ 1 as a stable plateau rather than a critical peak.
 
 ### 2.1 Input Parameters
 
+All values from Lipa et al. (2003):
+
 | Exponent | Symbol | Value | Source |
 |----------|--------|-------|--------|
-| Superfluid density | ζ | 0.6705 ± 0.0006 | Goldner et al. (1992) |
-| Correlation length | ν | 0.667 (= 2/3) | Theory + Lipa et al. (2003) |
-| Specific heat | α | -0.0127 ± 0.0003 | Lipa et al. (2003) |
+| Superfluid density | ζ | 0.6705 ± 0.0006 | Goldner et al. (1992), Lipa Table I ref [18] |
+| Correlation length | ν | 0.667 (≈ 2/3) | Theoretical approximation, Lipa text |
+| Specific heat | α | -0.0127 ± 0.0003 | Lipa et al. (2003), Table II |
 | Lambda point | T_λ | 2.1768 K | Vapor pressure value |
+
+**Note**: 
+- ζ is **experimental** value (Goldner measurement, cited in Lipa)
+- ν is **theoretical approximation** (exact 2/3 commonly used)
+- α is **experimental** value (Lipa direct measurement)
 
 ### 2.2 Derived Quantity
 ```
@@ -88,9 +95,7 @@ This near-zero value constitutes the mechanism underlying the κ plateau.
 
 **Experimental verification**:
 ```
-3(0.6705) + (-0.0127) - 2 = 3(0.6705) - 0.0127 - 2
-                           = 2.0115 - 0.0127 - 2
-                           = -0.0012
+3(0.6705) + (-0.0127) - 2 = -0.0012
 ```
 
 **With uncertainties**: -0.0012 ± 0.0027
@@ -208,12 +213,16 @@ Near T_λ:
 
 **Universality Class**: 3D XY model (n=2, D=3)
 
-**Predicted exponents**:
-- ζ ≈ 0.6705 (from 4-loop calculations)
-- ν ≈ 2/3 (exact in certain approximations)
-- α ≈ -0.013 (from ε-expansion)
+**Predicted exponents** (Campostrini et al., 2001):
+- ζ (theory) ≈ 0.67015 ± 0.00027
+- ν (theory) ≈ 0.67155(27)
+- α (theory) ≈ -0.0146 ± 0.0008
 
-**Results**: Agreement with predictions.
+**Experimental values** (from Lipa et al., 2003):
+- ζ (exp) = 0.6705 ± 0.0006 (Goldner et al., via Lipa Table I)
+- α (exp) = -0.0127 ± 0.0003 (Lipa Table II)
+
+**Our results**: Use experimental ζ and approximation ν = 2/3
 
 ### 6.2 κ Framework Predictions
 
@@ -233,7 +242,7 @@ Near T_λ:
 - Shows: κ(t) on semi-log scale
 - Key feature: Flat line (plateau) at κ ≈ 1
 - Annotation: Mean κ = 1.003 ± 0.011
-- File: `figures/fig1_kappa_plateau.png` (458 KB)
+- File: `figures/fig1_kappa_plateau.png` (455 KB)
 
 ### Figure 2: Component Analysis
 - Panel 1: τ ∝ t^ζ (rising)
@@ -247,7 +256,7 @@ Near T_λ:
 - He-I (T > T_λ): κ = 0 (no emergence)
 - He-II (T < T_λ): κ ≈ 1 (stable emergence)
 - Transition: Step function at T_λ
-- File: `figures/fig3_phase_diagram.png` (331 KB)
+- File: `figures/fig3_phase_diagram.png` (324 KB)
 
 ### Figure 4: Scaling Verification
 - Left panel: Log-log plot, slope ≈ 0.0035
@@ -298,7 +307,7 @@ This enriches understanding of emergent phenomena in physics.
 ### 9.2 Literature Agreement
 
 - ζ matches Goldner et al. (0.6705)
-- ν matches theory (2/3)
+- ν matches approximation (2/3)
 - α matches Lipa et al. (-0.0127)
 - T_λ correct (2.1768 K)
 

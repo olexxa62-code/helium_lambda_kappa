@@ -46,8 +46,8 @@ Verification of the theoretical scaling law κ ∝ t^(ζ-ν) with observed expon
 | Metric | Value | Interpretation |
 |--------|-------|----------------|
 | κ (superfluid phase) | 1.0026 ± 0.0105 | Stable emergence plateau |
-| Critical exponent ζ | 0.6705 ± 0.0006 | Superfluid density: ρ_s ∝ t^ζ |
-| Critical exponent ν | 0.667 | Correlation length: ξ ∝ t^(-ν) |
+| Critical exponent ζ | 0.6705 ± 0.0006 | Superfluid density: ρ_s ∝ t^ζ (experimental) |
+| Critical exponent ν | 0.667 ≈ 2/3 | Correlation length: ξ ∝ t^(-ν) (theoretical) |
 | Scaling relation | ζ - ν = 0.0035 | Mechanism for κ plateau |
 | Transition temperature | T_λ = 2.1768 K | Lambda point (vapor pressure) |
 
@@ -96,10 +96,10 @@ The emergence parameter is defined as:
 **Component identification**:
 - A/A_c = 1 (thermodynamic limit)
 - τ = ρ_s/ρ (superfluid density fraction, order parameter)
-  - Behavior: τ ∝ t^ζ with ζ = 0.6705
+  - Behavior: τ ∝ t^ζ with ζ = 0.6705 (experimental)
   - Increases as temperature decreases below T_λ
 - Λ/Λ_c = ξ/ξ_ref (normalized correlation length)
-  - Behavior: Λ ∝ t^(-ν) with ν = 0.667
+  - Behavior: Λ ∝ t^(-ν) with ν ≈ 2/3 (theoretical)
   - Decreases as temperature decreases below T_λ
 
 **Critical observation**:
@@ -136,17 +136,21 @@ The growth of superfluid order is compensated by the decay of thermal correlatio
 
 ### Data Sources
 
-Primary experimental measurements from Lipa et al. (2003):
+**Primary source: Lipa et al. (2003)**
 - Space Shuttle Columbia experiment (STS-52, 1992)
 - Zero-gravity environment eliminates pressure gradients
 - Temperature resolution: 2 nanokelvin
-- Critical exponents measured to 0.02% precision
-- Reference: arXiv:cond-mat/0310163v1
+- Reference: Physical Review B 68, 174518; arXiv:cond-mat/0310163
+
+**Critical exponents from Lipa et al. (2003), Table I:**
+- ζ = 0.6705 ± 0.0006 (experimental, Goldner et al., 1992, ref [18])
+- ν ≈ 2/3 (theoretical approximation used in Lipa text)
+- α = -0.0127 ± 0.0003 (measured by Lipa, Table II)
 
 ### Analysis Framework
 
-1. Superfluid density scaling: ρ_s ∝ t^ζ (Goldner et al., 1992)
-2. Correlation length scaling: ξ ∝ t^(-ν) (theoretical and experimental)
+1. Superfluid density scaling: ρ_s ∝ t^ζ (experimental value)
+2. Correlation length scaling: ξ ∝ t^(-ν) (theoretical approximation)
 3. Emergence parameter: κ = τ × (Λ/Λ_c) with A/A_c = 1
 4. Statistical analysis: 200 temperature points, 0.5-2.17 K
 
@@ -183,36 +187,23 @@ A.3_helium_lambda_kappa/
     ├── RESULTS_SUMMARY.md
     ├── FIGURE_DESCRIPTIONS.md
     └── references/
-        └── A.3_He-II_λ-Transition.pdf
+        ├── A.3_He-II_λ-Transition.pdf
+        └── А.3_Critical_behavior_XY.pdf
 ```
-
----
-
-## Comparison with Other Phase Transitions
-
-### He-II Plateau versus Percolation Peak
-
-| Property | He-II (This Work) | Percolation |
-|----------|-------------------|-------------|
-| κ behavior | Plateau (κ ≈ 1 for T < T_λ) | Peak (κ ≈ 1 only at p_c) |
-| Emergent state | Stable superfluid | Critical connectivity |
-| Temperature range | 0 to T_λ | Single point p_c |
-| Mechanism | ζ ≈ ν (compensation) | τ fixed (no compensation) |
-
-**Physical interpretation**: In He-II, both order parameter and correlation length are temperature-dependent with nearly equal exponents, enabling compensation. In percolation, the order parameter is geometrically fixed, precluding compensation.
 
 ---
 
 ## References
 
 ### Primary Experimental Source
-Lipa, J. A., Nissen, J. A., Stricker, D. A., Swanson, D. R., & Chui, T. C. P. (2003). Specific heat of liquid helium in zero gravity very near the lambda point. Physical Review B, 68(17), 174518. arXiv:cond-mat/0310163
 
-### Superfluid Density Measurements
-Goldner, L. S., Mulders, N., & Ahlers, G. (1992). Second sound very near T_λ. Journal of Low Temperature Physics, 93, 131-182.
+**Lipa, J. A., Nissen, J. A., Stricker, D. A., Swanson, D. R., & Chui, T. C. P.** (2003). Specific heat of liquid helium in zero gravity very near the lambda point. *Physical Review B*, **68**, 174518. arXiv:cond-mat/0310163
 
-### Theoretical Framework
-Campostrini, M., Hasenbusch, M., Pelissetto, A., Rossi, P., & Vicari, E. (2001). Critical exponents and equation of state of the three-dimensional Heisenberg universality class. Physical Review B, 63(21), 214503.
+### Critical Exponents
+
+**Experimental ζ**: Goldner, L. S., Mulders, N., & Ahlers, G. (1992). Second sound very near T_λ. *Journal of Low Temperature Physics*, **93**, 131-182. (As cited in Lipa et al., 2003, Table I, ref [18])
+
+**Theoretical predictions**: Campostrini, M., Hasenbusch, M., Pelissetto, A., Rossi, P., & Vicari, E. (2001). Critical behavior of the three-dimensional XY universality class. *Physical Review B*, **63**, 214503. arXiv:cond-mat/0010360
 
 ---
 

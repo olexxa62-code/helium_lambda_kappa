@@ -92,7 +92,7 @@ The specific heat C_p(T) exhibits a sharp peak at T_λ resembling the Greek lett
 ```
 τ(t) ∝ t^ζ    for T < T_λ
 ```
-where t = |1 - T/T_λ| and ζ = 0.6705
+where t = |1 - T/T_λ| and ζ = 0.6705 (experimental value)
 
 #### Λ: Correlation Scale
 **Definition**: Λ = ξ (correlation length)
@@ -106,7 +106,7 @@ where t = |1 - T/T_λ| and ζ = 0.6705
 ```
 Λ(t) = ξ(t) ∝ t^(-ν)
 ```
-where ν = 0.667 ≈ 2/3
+where ν ≈ 2/3 (theoretical approximation)
 
 ---
 
@@ -114,26 +114,42 @@ where ν = 0.667 ≈ 2/3
 
 ### 4.1 Measured Values
 
-| Exponent | Value | Physical Quantity | Reference |
-|----------|-------|-------------------|-----------|
-| ζ | 0.6705 ± 0.0006 | Superfluid density | Goldner et al. (1992) |
-| ν | 0.667 (≈ 2/3) | Correlation length | Theory + experiment |
-| α | -0.0127 ± 0.0003 | Specific heat | Lipa et al. (2003) |
+All critical exponents from Lipa et al. (2003):
 
-### 4.2 Scaling Relations
+| Exponent | Value | Physical Quantity | Source |
+|----------|-------|-------------------|--------|
+| ζ | 0.6705 ± 0.0006 | Superfluid density | Goldner et al. (1992), Lipa Table I ref [18] |
+| ν | 0.667 (≈ 2/3) | Correlation length | Theoretical approximation, Lipa text |
+| α | -0.0127 ± 0.0003 | Specific heat | Lipa et al. (2003), Table II |
+
+**Note on sources**:
+- **ζ**: Experimental value from Goldner et al. (1992), cited in Lipa Table I as reference [18]
+- **ν**: Standard approximation 2/3 used throughout literature and in Lipa text
+- **α**: Direct measurement by Lipa et al. from space experiment
+
+### 4.2 Theoretical Predictions
+
+From Campostrini et al. (2001), cited in Lipa Table I as reference [8]:
+- α (predicted) = -0.0146 ± 0.0008
+- ζ (predicted) = 0.67015 ± 0.00027  
+- ν (precise) = 0.67155(27)
+
+**Our analysis uses experimental ζ and approximation ν = 2/3.**
+
+### 4.3 Scaling Relations
 
 **Josephson Relation** (exact):
 ```
 3ζ + α - 2 = 0
 ```
 
-**Verification**:
+**Verification with experimental values**:
 ```
 3(0.6705) + (-0.0127) - 2 = -0.0012 ± 0.0027
 ```
 Agreement with theoretical prediction.
 
-### 4.3 Significance of ζ ≈ ν
+### 4.4 Significance of ζ ≈ ν
 
 The near equality ζ ≈ ν constitutes an empirical property specific to 3D systems with n=2 order parameter (XY universality class), not a fundamental law.
 
@@ -269,8 +285,8 @@ Log-log plot demonstrates nearly horizontal behavior.
 
 Analysis maintains consistency with:
 - Lipa et al. (2003) critical exponents
-- Goldner et al. (1992) superfluid density measurements
-- RG theory predictions for 3D XY universality class
+- Goldner et al. (1992) superfluid density measurements  
+- RG theory predictions (Campostrini et al., 2001) for 3D XY universality class
 
 ---
 
@@ -325,11 +341,9 @@ This emerges from the specific RG fixed point of the 3D XY model rather than rep
 
 1. Lipa, J. A., Nissen, J. A., Stricker, D. A., Swanson, D. R., & Chui, T. C. P. (2003). Specific heat of liquid helium in zero gravity very near the lambda point. *Physical Review B*, 68(17), 174518. arXiv:cond-mat/0310163
 
-2. Goldner, L. S., Mulders, N., & Ahlers, G. (1992). Second sound very near T_λ. *Journal of Low Temperature Physics*, 93, 131-182.
+2. Goldner, L. S., Mulders, N., & Ahlers, G. (1992). Second sound very near T_λ. *Journal of Low Temperature Physics*, 93, 131-182. (As cited in Lipa et al., 2003, Table I, Reference [18])
 
-3. Campostrini, M., Hasenbusch, M., Pelissetto, A., Rossi, P., & Vicari, E. (2001). Critical exponents and equation of state of the three-dimensional Heisenberg universality class. *Physical Review B*, 63(21), 214503.
-
-4. Kleinert, H., & Schulte-Frohlinde, V. (2001). Critical Properties of φ⁴-Theories. World Scientific.
+3. Campostrini, M., Hasenbusch, M., Pelissetto, A., Rossi, P., & Vicari, E. (2001). Critical behavior of the three-dimensional XY universality class. *Physical Review B*, 63(21), 214503. arXiv:cond-mat/0010360
 
 ---
 
