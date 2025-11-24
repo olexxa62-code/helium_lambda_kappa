@@ -72,7 +72,7 @@ All Markdown files now include:
 - .gitignore
 
 **Removed references**:
-- All mentions of "System A.1-A.8" (each system is independent)
+- All cross-system references (each system is independent)
 - Cross-references to other projects
 - Comparative statements with other systems
 

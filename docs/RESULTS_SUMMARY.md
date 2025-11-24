@@ -337,7 +337,7 @@ This enriches understanding of emergent phenomena in physics.
 3. Study normalization dependence systematically
 
 **Medium Priority**:
-4. Extend to other superfluids (3He, BECs)
+4. Extend to other superfluids (3He)
 5. Compare with superconductors
 
 ---

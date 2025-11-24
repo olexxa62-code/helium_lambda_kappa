@@ -5,7 +5,7 @@ All figures are generated at **600 DPI** in publication-ready quality. They visu
 
 ---
 
-## Figure 1: κ Plateau Throughout Superfluid Phase ⭐
+## Figure 1: κ Plateau Throughout Superfluid Phase 
 
 **File**: `figures/fig1_kappa_plateau.png` (458 KB)  
 **Dimensions**: 10" × 6" at 600 DPI  
@@ -135,7 +135,6 @@ Shows κ behavior across **both** normal and superfluid phases:
 - **Above T_λ**: No emergence (κ = 0), classical behavior
 - **At T_λ**: Birth of emergent state (discontinuous transition)
 
-**Contrast with Percolation**: 
 In percolation, κ **peaks** at p_c then drops. Here, κ **jumps** to 1 and **stays** there.
 
 ---
@@ -268,35 +267,18 @@ Output files overwrite existing figures in `figures/` directory.
 
 ---
 
-## Comparison with System A.5 (Percolation)
-
-| Feature | He-II (A.3) | Percolation (A.5) |
-|---------|-------------|-------------------|
-| Fig 1 equivalent | **Plateau** | **Peak** |
-| Shape | Flat line | Triangle |
-| Width | Entire phase | Single point |
-| Mechanism | Both dynamic | One fixed |
-
-**Visual difference**: 
-- A.5 Fig 1 shows sharp peak at p_c
-- A.3 Fig 1 shows flat plateau for all T < T_λ
-
-This visual contrast is the **core distinction** between the systems.
-
----
-
 ## Common Misinterpretations (to avoid)
 
-### ❌ "κ is always 1 in He-II"
+### Х "κ is always 1 in He-II"
 **Correct**: κ ≈ 1.00 ± 0.01 (not exactly 1, but very close)
 
-### ❌ "The plateau proves κ theory is wrong"
+### Х "The plateau proves κ theory is wrong"
 **Correct**: The plateau **extends** κ theory from critical points to phases
 
-### ❌ "This only works for He-II"
+### Х "This only works for He-II"
 **Correct**: Should work for any system with ζ ≈ ν (testable prediction)
 
-### ❌ "κ = 0 above T_λ means no physics"
+### Х "κ = 0 above T_λ means no physics"
 **Correct**: κ = 0 means classical (non-emergent) behavior, still physical
 
 ---

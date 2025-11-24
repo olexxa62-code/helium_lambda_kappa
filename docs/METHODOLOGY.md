@@ -313,7 +313,7 @@ Analysis maintains consistency with:
 ### 9.4 System Specificity
 
 - Analysis specific to 4He λ-transition
-- Other superfluids (3He, BECs) may exhibit different behavior
+- Other superfluids (3He) may exhibit different behavior
 - Universality class: 3D XY (n=2, D=3)
 
 ---

@@ -172,7 +172,6 @@ Both τ and Λ are temperature-dependent with nearly equal exponents (ζ ≈ ν)
 - 4He λ-transition
 - Superconductors (flux line lattice melting)
 - Certain magnets (planar spins)
-- Atomic BECs with 2-component order parameter
 
 ---
 

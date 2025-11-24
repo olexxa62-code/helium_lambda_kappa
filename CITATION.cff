@@ -5,11 +5,11 @@ title: "System A.3: He-II λ-Transition - Emergence Parameter κ Analysis"
 authors:
   - family-names: "Onasenko"
     given-names: "Oleksii"
-    orcid: ""
+    orcid: https://orcid.org/0009-0007-7017-8161
 version: "2.0.0"
 date-released: 2025-11-16
-url: "https://github.com/yourusername/A.3_helium_lambda_kappa"
-repository-code: "https://github.com/yourusername/A.3_helium_lambda_kappa"
+url: "https://github.com/olexxa62-code/helium_lambda_kappa"
+repository-code: "https://github.com/olexxa62-code/helium_lambda_kappa"
 license: Apache-2.0
 keywords:
   - emergence
