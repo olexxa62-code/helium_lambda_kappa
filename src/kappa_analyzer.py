@@ -38,7 +38,7 @@ T_LAMBDA = 2.1768  # K (lambda point at vapor pressure, Lipa et al., 2003)
 ZETA = 0.6705      # Superfluid density exponent (experimental)
                    # Goldner et al. (1992) as cited in Lipa Table I, ref [18]
                    
-NU = 0.667         # Correlation length exponent (≈ 2/3)
+NU = 0.6717        # Correlation length exponent (XY universality class)
                    # Standard approximation used in Lipa et al. text
                    
 ALPHA = -0.0127    # Specific heat exponent (experimental)

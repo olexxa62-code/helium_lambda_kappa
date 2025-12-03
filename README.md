@@ -47,7 +47,7 @@ Verification of the theoretical scaling law κ ∝ t^(ζ-ν) with observed expon
 |--------|-------|----------------|
 | κ (superfluid phase) | 1.0026 ± 0.0105 | Stable emergence plateau |
 | Critical exponent ζ | 0.6705 ± 0.0006 | Superfluid density: ρ_s ∝ t^ζ (experimental) |
-| Critical exponent ν | 0.667 ≈ 2/3 | Correlation length: ξ ∝ t^(-ν) (theoretical) |
+| Critical exponent ν | 0.6717 | Correlation length: ξ ∝ t^(-ν) (theoretical) |
 | Scaling relation | ζ - ν = 0.0035 | Mechanism for κ plateau |
 | Transition temperature | T_λ = 2.1768 K | Lambda point (vapor pressure) |
 

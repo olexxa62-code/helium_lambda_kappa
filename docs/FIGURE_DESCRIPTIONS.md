@@ -72,10 +72,10 @@ Order parameter grows as system moves away from T_λ. More atoms condense into c
 - **Orange circles with line**: Normalized correlation length
 - **X-axis**: Reduced temperature t (log scale)
 - **Y-axis**: Λ/Λ_c (Correlation) (log scale)
-- **Wheat-colored box**: Shows ν = 0.667
+- **Wheat-colored box**: Shows ν = 0.6717
 
 **What It Shows**:
-- Power law: Λ ∝ t^(-ν) = t^(-0.667)
+- Power law: Λ ∝ t^(-ν) = t^(-0.6717)
 - **Falling** from left to right (as T increases toward T_λ)
 - Inverse power law (negative exponent)
 - At small t (deep superfluid): ξ is small (short-range)
@@ -204,7 +204,7 @@ Both panels confirm the theoretical prediction that ζ ≈ ν leads to κ ≈ co
 ### Data Source
 All figures generated from:
 - **Synthetic data**: `results/kappa_analysis.csv` (200 points)
-- **Parameters**: ζ = 0.6705, ν = 0.667 from literature
+- **Parameters**: ζ = 0.6705, ν = 0.6717 from literature
 - **Temperature range**: 0.5 K to 2.1768 K
 - **No smoothing** applied (raw data shown)
 
@@ -288,7 +288,7 @@ Output files overwrite existing figures in `figures/` directory.
 **Version 1.0** (November 6, 2025):
 - Initial generation from synthetic data
 - All 4 figures at 600 DPI
-- Based on ζ = 0.6705, ν = 0.667
+- Based on ζ = 0.6705, ν = 0.6717
 
 **Future versions** (if needed):
 - Incorporate real C_p(T) data from Lipa et al.

@@ -136,7 +136,7 @@ class HeliumVisualizer:
                   'o-', color='#f39c12', alpha=0.7, markersize=4)
         ax2.set_ylabel('Λ/Λ$_c$ = ξ/ξ$_{ref}$\n(Correlation)', fontsize=12)
         ax2.grid(True, alpha=0.3, which='both')
-        ax2.text(0.05, 0.95, f'ν = 0.667', transform=ax2.transAxes,
+        ax2.text(0.05, 0.95, f'ν = 0.6717', transform=ax2.transAxes,
                 fontsize=10, verticalalignment='top',
                 bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
         
@@ -148,7 +148,7 @@ class HeliumVisualizer:
         ax3.set_xlabel('Reduced Temperature t = |1 - T/T$_λ$|', fontsize=13)
         ax3.grid(True, alpha=0.3, which='both')
         
-        exponent = 0.6705 - 0.667
+        exponent = 0.6705 - 0.6717
         ax3.text(0.5, 0.95, f'κ ∝ t$^{{ζ-ν}}$ = t$^{{{exponent:.4f}}}$ ≈ const', 
                 transform=ax3.transAxes, fontsize=11,
                 bbox=dict(boxstyle='round', facecolor='yellow', alpha=0.5),
@@ -218,7 +218,7 @@ class HeliumVisualizer:
         
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
         
-        exponent = 0.6705 - 0.667
+        exponent = 0.6705 - 0.6717
         theory = np.power(data_super['t'].values, exponent)
         theory_normalized = theory / theory[len(theory)//2] * data_super['kappa'].iloc[len(theory)//2]
         
