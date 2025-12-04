@@ -272,7 +272,7 @@ class HeliumLambdaAnalyzer:
             f.write(f"  ζ (superfluid density) = {ZETA:.4f}\n")
             f.write(f"    Source: Goldner et al. (1992), Table I ref [18]\n")
             f.write(f"  ν (correlation length) = {NU:.3f}\n")
-            f.write(f"    Source: Approximation 2/3, as used in Lipa text\n")
+            f.write(f"    Source: XY universality class (Campostrini et al., 2001)\n")
             f.write(f"  ζ - ν = {ZETA - NU:.4f}\n\n")
             f.write("Theoretical Result:\n")
             f.write(f"  κ ∝ t^(ζ-ν) = t^{ZETA - NU:.4f}\n\n")

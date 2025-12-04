@@ -6,18 +6,18 @@ Lambda Point: T_λ = 2.1768 K
 Critical Exponents (from Lipa et al., 2003):
   ζ (superfluid density) = 0.6705
     Source: Goldner et al. (1992), Table I ref [18]
-  ν (correlation length) = 0.667
+  ν (correlation length) = 0.672
     Source: Approximation 2/3, as used in Lipa text
-  ζ - ν = 0.0035
+  ζ - ν = -0.0012
 
 Theoretical Result:
-  κ ∝ t^(ζ-ν) = t^0.0035
+  κ ∝ t^(ζ-ν) = t^-0.0012
 
 Emergence Parameter Statistics (T < T_λ):
-  Mean κ = 1.0026 ± 0.0105
-  Range: [0.9426, 1.0153]
+  Mean κ = 0.9991 ± 0.0036
+  Range: [0.9948, 1.0205]
   κ at t=0.01: nan
-  κ at t=0.1: 1.0081
+  κ at t=0.1: 0.9972
 
 Temperature Range: 0.50 - 2.1768 K
 Number of Points: 200
