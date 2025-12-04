@@ -40,7 +40,7 @@ Liquid helium-4 at vapor pressure undergoing λ-transition from normal fluid (He
 ### Emergence Parameter
 - κ = (A/A_c) × τ × (Λ/Λ_c) = τ(t) × Λ(t)/Λ_c
 - κ ∝ t^(ζ-ν) = t^(-0.0012) ≈ constant
-- κ = 1.0026 ± 0.0105 throughout superfluid phase
+- κ = 0.999 ± 0.004 throughout superfluid phase
 
 ---
 
@@ -223,7 +223,7 @@ python visualizer.py ../results/kappa_analysis.csv
 ```
 
 Expected results:
-- Mean κ = 1.0026 ± 0.0105
+- Mean κ = 0.999 ± 0.004
 - Range: [0.94, 1.02]
 - Scaling: κ ∝ t^(-0.0012)
 

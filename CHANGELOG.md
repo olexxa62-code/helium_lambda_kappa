@@ -35,6 +35,6 @@ All notable changes to this project will be documented in this file.
 - Statistical analysis results
 
 ### Results
-- κ = 1.0026 ± 0.0105 throughout superfluid phase
+- κ = 0.999 ± 0.004 throughout superfluid phase
 - Demonstrated κ plateau mechanism
 - Validated against experimental data

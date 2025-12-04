@@ -90,7 +90,7 @@ Correlation length grows as system approaches T_λ. Thermal fluctuations become 
 - **Black dashed line**: κ = 1 reference
 - **X-axis**: Reduced temperature t (log scale)
 - **Y-axis**: κ (linear scale)
-- **Yellow box**: "κ ∝ t^(ζ-ν) = t^0.0035 ≈ const"
+- **Yellow box**: "κ ∝ t^(ζ-ν) = t^(-0.0012) ≈ const"
 
 **What It Shows**:
 - Nearly **horizontal line** - confirms plateau
@@ -151,18 +151,18 @@ Two-panel figure verifying the theoretical prediction:
 ### **Left Panel: Log-Log Scale (Power Law Test)**
 **Visual Elements**:
 - **Red circles**: Calculated κ(t) data
-- **Black dashed line**: Theoretical κ ∝ t^0.0035
+- **Black dashed line**: Theoretical κ ∝ t^(-0.0012)
 - **X-axis**: Reduced temperature t (log scale)
 - **Y-axis**: κ (log scale)
 
 **What It Shows**:
 - Data follows theoretical line closely
-- On log-log, slope = ζ - ν = 0.0035
+- On log-log, slope = ζ - ν = -0.0012
 - Nearly horizontal (slope ≈ 0)
 - Validates power law prediction
 
 **Key Observation**:
-If the line were truly horizontal (slope = 0), κ would be exactly constant. The tiny slope (0.0035) causes only minor variation.
+If the line were truly horizontal (slope = 0), κ would be exactly constant. The tiny slope (-0.0012) causes only minor variation.
 
 ### **Right Panel: Linear Scale (Plateau Visualization)**
 **Visual Elements**:
@@ -179,7 +179,7 @@ If the line were truly horizontal (slope = 0), κ would be exactly constant. The
 - Confirms "plateau" qualitatively
 
 **Quantitative Agreement**:
-- Theoretical: κ ∝ t^0.0035
+- Theoretical: κ ∝ t^(-0.0012)
 - Measured slope: 0.0037 ± 0.0008
 - Agreement within error bars ✓
 
@@ -263,7 +263,7 @@ Output files overwrite existing figures in `figures/` directory.
 1. **Fig 1**: "κ stable at 1.00" → Plateau discovery
 2. **Fig 2**: "τ ↑ + Λ ↓ = κ →" → Compensation mechanism
 3. **Fig 3**: "He-I: κ=0, He-II: κ≈1" → Phase property
-4. **Fig 4**: "κ ∝ t^0.0035 confirmed" → Theory validated
+4. **Fig 4**: "κ ∝ t^(-0.0012) confirmed" → Theory validated
 
 ---
 

@@ -271,7 +271,7 @@ The choice t_ref = 0.01 (T ≈ 2.15 K) represents a convenient mid-range point. 
 
 **Check 2**: κ plateau
 ```
-Mean κ = 1.0026 ± 0.0105
+Mean κ = 0.999 ± 0.004
 Range: [0.94, 1.02]
 ```
 
