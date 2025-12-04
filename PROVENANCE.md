@@ -33,13 +33,13 @@ Liquid helium-4 at vapor pressure undergoing λ-transition from normal fluid (He
 
 ### Correlation
 - Λ = ξ (correlation length of thermal fluctuations)
-- Λ(t) ∝ t^(-ν) with ν ≈ 2/3
+- Λ(t) ∝ t^(-ν) with ν = 0.6717
 - Λ → ∞ as T → T_λ (critical divergence)
 - Λ_c = ξ evaluated at reference point
 
 ### Emergence Parameter
 - κ = (A/A_c) × τ × (Λ/Λ_c) = τ(t) × Λ(t)/Λ_c
-- κ ∝ t^(ζ-ν) = t^0.0035 ≈ constant
+- κ ∝ t^(ζ-ν) = t^(-0.0012) ≈ constant
 - κ = 1.0026 ± 0.0105 throughout superfluid phase
 
 ---
@@ -52,7 +52,7 @@ Liquid helium-4 at vapor pressure undergoing λ-transition from normal fluid (He
 
 ## Mechanism: Perfect Compensation
 ```
-ζ - ν = 0.6705 - 0.667 = 0.0035 ≈ 0
+ζ - ν = 0.6705 - 0.6717 = -0.0012 ≈ 0
 ```
 
 As temperature decreases below T_λ:
@@ -93,7 +93,7 @@ As temperature decreases below T_λ:
 - Most precise experimental determination of superfluid density exponent
 - Original: *Journal of Low Temperature Physics*, **93**, 131-182
 
-**ν ≈ 2/3 (= 0.667)** (theoretical approximation)
+**ν = 0.6717 (XY universality class)** (theoretical approximation)
 - Standard value for 3D XY universality class
 - Used by Lipa et al. in text for correlation length: ξ ∝ t^(-2/3)
 - Precise theoretical value: ν = 0.67155(27) from Campostrini et al. (2001)
@@ -135,7 +135,7 @@ Measured from second sound velocity v_2^2 ∝ ρ_s. Scaling: ρ_s ∝ |t|^ζ nea
 
 **Note**: Theoretical prediction ζ = 0.67015 ± 0.00027 (Campostrini, 2001) differs slightly from experimental value.
 
-### ν ≈ 2/3 (Theoretical Approximation)
+### ν = 0.6717 (XY universality class)
 **Source**: Standard approximation used by Lipa et al. in text
 
 Determined from:
@@ -225,7 +225,7 @@ python visualizer.py ../results/kappa_analysis.csv
 Expected results:
 - Mean κ = 1.0026 ± 0.0105
 - Range: [0.94, 1.02]
-- Scaling: κ ∝ t^0.0035
+- Scaling: κ ∝ t^(-0.0012)
 
 ---
 

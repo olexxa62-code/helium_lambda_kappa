@@ -7,7 +7,7 @@ Critical Exponents (from Lipa et al., 2003):
   ζ (superfluid density) = 0.6705
     Source: Goldner et al. (1992), Table I ref [18]
   ν (correlation length) = 0.672
-    Source: Approximation 2/3, as used in Lipa text
+    Source: XY universality class (Campostrini et al., 2001)
   ζ - ν = -0.0012
 
 Theoretical Result:

@@ -180,7 +180,7 @@ For T < T_λ:
 
 Therefore:
 ```
-κ ∝ t^0.0035 ≈ constant ≈ 1
+κ ∝ t^(-0.0012) ≈ constant ≈ 1
 ```
 
 ### 5.3 Physical Interpretation
@@ -237,7 +237,7 @@ For each temperature T:
 
 ### 7.1 Rationale
 
-Raw κ_raw ∝ t^0.0035 exhibits near-constant behavior requiring calibration to κ ≈ 1.
+Raw κ_raw ∝ t^(-0.0012) exhibits near-constant behavior requiring calibration to κ ≈ 1.
 
 ### 7.2 Procedure
 
@@ -277,7 +277,7 @@ Range: [0.94, 1.02]
 
 **Check 3**: Scaling law
 ```
-κ ∝ t^0.0035
+κ ∝ t^(-0.0012)
 ```
 Log-log plot demonstrates nearly horizontal behavior.
 
