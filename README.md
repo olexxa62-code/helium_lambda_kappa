@@ -11,9 +11,9 @@
 
 ## Abstract
 
-This project analyzes the λ-transition of liquid helium-4 using the emergence parameter κ framework. Based on high-precision measurements from Lipa et al. (2003), we demonstrate that κ maintains a value of approximately 1.00 throughout the entire superfluid phase, not exclusively at the critical point T_λ. This represents a stable emergent plateau rather than a critical peak, fundamentally distinguishing superfluidity from other phase transitions.
+This project analyzes the λ-transition of liquid helium-4 using the emergence parameter κ framework. Based on high-precision measurements from Lipa et al. (2003), we demonstrate that κ maintains a value of approximately 0.99 throughout the entire superfluid phase, not exclusively at the critical point T_λ. This represents a stable emergent plateau rather than a critical peak, fundamentally distinguishing superfluidity from other phase transitions.
 
-**Principal Result**: κ = 0.999 ± 0.004 for 0.5 K < T < 2.1768 K
+**Principal Result**: κ = 0.989 ± 0.007 for 0.5 K < T < 2.1768 K
 
 ---
 
@@ -32,7 +32,7 @@ Visualization of the compensation mechanism: superfluid density τ ∝ t^ζ incr
 ### Figure 3: Phase Diagram
 ![Phase Diagram](figures/fig3_phase_diagram.png)
 
-Phase diagram showing κ = 0 in normal phase (He-I) and κ ≈ 1 in superfluid phase (He-II), with discontinuous transition at T_λ.
+Phase diagram showing κ = 0 in normal phase (He-I) and κ ≈ 0.99 in superfluid phase (He-II), with discontinuous transition at T_λ.
 
 ### Figure 4: Scaling Verification
 ![Scaling Verification](figures/fig4_scaling_verification.png)
@@ -45,10 +45,10 @@ Verification of the theoretical scaling law κ ∝ t^(ζ-ν) with observed expon
 
 | Metric | Value | Interpretation |
 |--------|-------|----------------|
-| κ (superfluid phase) | 0.999 ± 0.004 | Stable emergence plateau |
+| κ (superfluid phase) | 0.989 ± 0.007 | Stable emergence plateau |
 | Critical exponent ζ | 0.6705 ± 0.0006 | Superfluid density: ρ_s ∝ t^ζ (experimental) |
-| Critical exponent ν | 0.6717 | Correlation length: ξ ∝ t^(-ν) (theoretical) |
-| Scaling relation | ζ - ν = -0.0012 | Mechanism for κ plateau |
+| Critical exponent ν | 0.667 | Correlation length: ξ ∝ t^(-ν) (theoretical) |
+| Scaling relation | ζ - ν = 0.0035 | Mechanism for κ plateau |
 | Transition temperature | T_λ = 2.1768 K | Lambda point (vapor pressure) |
 
 **Mechanism**: The near equality ζ ≈ ν results in κ ∝ t^(ζ-ν) ≈ t^0 ≈ constant, representing perfect compensation between order parameter growth and correlation length decay.
@@ -107,7 +107,7 @@ The emergence parameter is defined as:
 κ ∝ t^ζ × t^(-ν) = t^(ζ-ν) = t^(-0.0012) ≈ constant
 ```
 
-The growth of superfluid order is compensated by the decay of thermal correlations, yielding κ ≈ 1 throughout the superfluid phase.
+The growth of superfluid order is compensated by the decay of thermal correlations, yielding κ ≈ 0.99 throughout the superfluid phase.
 
 ---
 

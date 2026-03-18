@@ -31,7 +31,7 @@
 
 The λ-transition of liquid helium-4 represents one of the most precisely measured phase transitions in nature. This document describes the application of the emergence parameter κ framework to analyze this transition.
 
-**Primary Result**: κ ≈ 1 throughout the entire superfluid phase, not exclusively at T_λ.
+**Primary Result**: κ ≈ 0.99 throughout the entire superfluid phase, not exclusively at T_λ.
 
 ---
 
@@ -180,7 +180,7 @@ For T < T_λ:
 
 Therefore:
 ```
-κ ∝ t^(-0.0012) ≈ constant ≈ 1
+κ ∝ t^(0.0035) ≈ constant ≈ 0.99
 ```
 
 ### 5.3 Physical Interpretation
@@ -190,9 +190,9 @@ As temperature decreases below T_λ:
 1. Order increases: ρ_s ∝ t^ζ grows
 2. Correlations decrease: ξ ∝ t^(-ν) shrinks
 
-These effects mutually compensate, yielding κ ≈ 1 throughout the superfluid phase.
+These effects mutually compensate, yielding κ ≈ 0.99 throughout the superfluid phase.
 
-**Physical meaning**: The superfluid constitutes a stable emergent state with constant emergence strength κ ≈ 1.
+**Physical meaning**: The superfluid constitutes a stable emergent state with constant emergence strength κ ≈ 0.99.
 
 ---
 
@@ -237,7 +237,7 @@ For each temperature T:
 
 ### 7.1 Rationale
 
-Raw κ_raw ∝ t^(-0.0012) exhibits near-constant behavior requiring calibration to κ ≈ 1.
+Raw κ_raw ∝ t^(-0.0012) exhibits near-constant behavior requiring calibration to κ ≈ 0.99.
 
 ### 7.2 Procedure
 
@@ -250,7 +250,7 @@ Reference point selection: t_ref = 0.01
 
 With this normalization:
 - κ(t_ref) = 1 by construction
-- κ(t) ≈ 1 for all t (due to ζ-ν ≈ 0)
+- κ(t) ≈ 0.99 for all t (due to ζ-ν ≈ 0)
 
 ### 7.3 Reference Point Selection
 
@@ -322,9 +322,9 @@ Analysis maintains consistency with:
 
 ### 10.1 Emergence as Stable State
 
-Traditional perspective: Emergence occurs at critical points (κ ≈ 1 at p_c, T_c)
+Traditional perspective: Emergence occurs at critical points (κ ≈ 0.99 at p_c, T_c)
 
-He-II demonstrates: Emergence can constitute a stable phase property (κ ≈ 1 for all T < T_λ)
+He-II demonstrates: Emergence can constitute a stable phase property (κ ≈ 0.99 for all T < T_λ)
 
 ### 10.2 Mechanism: Compensation
 

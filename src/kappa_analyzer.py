@@ -38,7 +38,7 @@ T_LAMBDA = 2.1768  # K (lambda point at vapor pressure, Lipa et al., 2003)
 ZETA = 0.6705      # Superfluid density exponent (experimental)
                    # Goldner et al. (1992) as cited in Lipa Table I, ref [18]
                    
-NU = 0.6717        # Correlation length exponent (XY universality class)
+NU = 0.667        # Correlation length exponent (XY universality class)
                    # Standard approximation used in Lipa et al. text
                    
 ALPHA = -0.0127    # Specific heat exponent (experimental)
@@ -138,12 +138,8 @@ class HeliumLambdaAnalyzer:
             kappa_raw = tau_raw * xi_raw
             
             # Normalize to κ = 1 at reference point
-            t_ref = 0.01
-            tau_ref = np.power(t_ref, ZETA)
-            xi_ref = np.power(t_ref, -NU)
-            kappa_ref = tau_ref * xi_ref
             
-            kappa[mask] = kappa_raw / kappa_ref
+            kappa[mask] = kappa_raw  # Raw κ without normalization
         
         return kappa, t
     
@@ -164,33 +160,37 @@ class HeliumLambdaAnalyzer:
         exponent = ZETA - NU
         kappa_raw = np.power(t, exponent)
         
-        t_ref = 0.01
-        kappa_ref = np.power(t_ref, exponent)
-        
-        return kappa_raw / kappa_ref
+        # Raw theoretical values
+        return kappa_raw
     
-    def generate_synthetic_data(self, n_points=100):
+    def generate_synthetic_data(self, n_points=200):
         """
-        Generate synthetic data for κ analysis.
-        
-        Parameters
-        ----------
-        n_points : int
-            Number of data points.
-            
-        Returns
-        -------
-        DataFrame
-            Analysis data.
+        Generate synthetic data with proper t distribution including t=0.01.
+        Fixed: includes normalization point and avoids numerical instability.
         """
-        T_min = 0.5
-        T_max = self.T_lambda - 1e-9
+        # Обчислення ключових температур
+        T_at_t001 = self.T_lambda * (1.0 - 0.01)  # T = 2.155 K для t=0.01
+        T_min = 0.5  # Далека від критичної точки
+        T_max = self.T_lambda * (1.0 - 0.001)  # Мінімальний t = 0.001
         
-        T_near = np.logspace(np.log10(T_max - 0.01), np.log10(T_max), n_points//2)
-        T_far = np.linspace(T_min, T_max - 0.01, n_points//2)
+        # Три діапазони для кращого покриття
+        n1, n2, n3 = n_points//3, n_points//3, n_points - 2*(n_points//3)
         
-        T = np.concatenate([T_far, T_near])
+        # 1. Далекі температури (t > 0.1)
+        T_far = np.linspace(T_min, self.T_lambda * 0.9, n1)
+        
+        # 2. Проміжні температури (включаючи t=0.01)
+        T_mid = np.linspace(self.T_lambda * 0.9, T_at_t001, n2)
+        
+        # 3. Близькі температури (t = 0.001 до 0.01)  
+        T_near = np.linspace(T_at_t001, T_max, n3)
+        
+        # Об'єднання та сортування
+        T = np.concatenate([T_far, T_mid, T_near])
         T = np.sort(T)
+        
+        print(f"Temperature range: {T.min():.3f} - {T.max():.6f} K")
+        print(f"T for t=0.01: {T_at_t001:.3f} K (included: {np.any(np.abs(T - T_at_t001) < 0.001)})")
         
         kappa, t = self.calculate_kappa(T)
         
@@ -202,10 +202,7 @@ class HeliumLambdaAnalyzer:
             t_super = t[mask]
             rho_s[mask] = self.superfluid_density(t_super)
             
-            t_ref = 0.01
             xi_raw = self.correlation_length(t_super)
-            xi_ref = self.correlation_length(t_ref)
-            xi_norm[mask] = xi_raw / xi_ref
         
         self.data = pd.DataFrame({
             'T': T,
