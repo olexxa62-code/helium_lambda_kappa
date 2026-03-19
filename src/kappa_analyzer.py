@@ -214,7 +214,7 @@ class HeliumLambdaAnalyzer:
         
         return self.data
     
-    def analyze(self, output_dir='../results'):
+    def analyze(self, output_dir='results'):
         """
         Perform complete κ analysis.
         

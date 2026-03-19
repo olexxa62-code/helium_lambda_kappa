@@ -58,7 +58,7 @@ class HeliumVisualizer:
         self.data = pd.read_csv(data_path)
         self.T_lambda = 2.1768
         
-    def plot_kappa_plateau(self, output_dir='../figures'):
+    def plot_kappa_plateau(self, output_dir='figures'):
         """
         Figure 1: κ Plateau Throughout Superfluid Phase.
         
@@ -95,7 +95,7 @@ class HeliumVisualizer:
         ax.grid(True, alpha=0.3, which='both')
         ax.set_xlim(data_super['t'].min() * 0.8, data_super['t'].max() * 1.2)
         
-        ax.text(0.5, 0.95, 'κ ≈ 1: Stable Emergent State', 
+        ax.text(0.5, 0.95, 'κ ≈ 0.99: Stable Emergent State', 
                transform=ax.transAxes, fontsize=11,
                bbox=dict(boxstyle='round', facecolor='yellow', alpha=0.3),
                verticalalignment='top', horizontalalignment='center')
@@ -106,7 +106,7 @@ class HeliumVisualizer:
         print(f"Saved: {output_dir}/fig1_kappa_plateau.png")
         plt.close()
         
-    def plot_component_analysis(self, output_dir='../figures'):
+    def plot_component_analysis(self, output_dir='figures'):
         """
         Figure 2: Component Analysis (τ and Λ/Λ_c).
         
@@ -136,7 +136,7 @@ class HeliumVisualizer:
                   'o-', color='#f39c12', alpha=0.7, markersize=4)
         ax2.set_ylabel('Λ/Λ$_c$ = ξ/ξ$_{ref}$\n(Correlation)', fontsize=12)
         ax2.grid(True, alpha=0.3, which='both')
-        ax2.text(0.05, 0.95, f'ν = 0.6717', transform=ax2.transAxes,
+        ax2.text(0.05, 0.95, f'ν = 0.667', transform=ax2.transAxes,
                 fontsize=10, verticalalignment='top',
                 bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
         
@@ -148,7 +148,7 @@ class HeliumVisualizer:
         ax3.set_xlabel('Reduced Temperature t = |1 - T/T$_λ$|', fontsize=13)
         ax3.grid(True, alpha=0.3, which='both')
         
-        exponent = 0.6705 - 0.6717
+        exponent = 0.6705 - 0.667
         ax3.text(0.5, 0.95, f'κ ∝ t$^{{ζ-ν}}$ = t$^{{{exponent:.4f}}}$ ≈ const', 
                 transform=ax3.transAxes, fontsize=11,
                 bbox=dict(boxstyle='round', facecolor='yellow', alpha=0.5),
@@ -159,7 +159,7 @@ class HeliumVisualizer:
         print(f"Saved: {output_dir}/fig2_component_analysis.png")
         plt.close()
         
-    def plot_phase_diagram(self, output_dir='../figures'):
+    def plot_phase_diagram(self, output_dir='figures'):
         """
         Figure 3: Phase Diagram with κ Regimes.
         
@@ -178,7 +178,7 @@ class HeliumVisualizer:
         kappa_full[~mask_super] = 0.0
         
         ax.plot(T_full[mask_super], kappa_full[mask_super], 
-               'r-', linewidth=3, label='Superfluid (He-II): κ ≈ 1')
+               'r-', linewidth=3, label='Superfluid (He-II): κ ≈ 0.99')
         ax.plot(T_full[~mask_super], kappa_full[~mask_super], 
                'b-', linewidth=3, label='Normal (He-I): κ = 0')
         
@@ -204,7 +204,7 @@ class HeliumVisualizer:
         print(f"Saved: {output_dir}/fig3_phase_diagram.png")
         plt.close()
         
-    def plot_scaling_verification(self, output_dir='../figures'):
+    def plot_scaling_verification(self, output_dir='figures'):
         """
         Figure 4: Verification of κ ∝ t^(ζ-ν) ≈ const.
         
@@ -218,7 +218,7 @@ class HeliumVisualizer:
         
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
         
-        exponent = 0.6705 - 0.6717
+        exponent = 0.6705 - 0.667
         theory = np.power(data_super['t'].values, exponent)
         theory_normalized = theory / theory[len(theory)//2] * data_super['kappa'].iloc[len(theory)//2]
         
@@ -254,7 +254,7 @@ class HeliumVisualizer:
         print(f"Saved: {output_dir}/fig4_scaling_verification.png")
         plt.close()
         
-    def generate_all_figures(self, output_dir='../figures'):
+    def generate_all_figures(self, output_dir='figures'):
         """
         Generate all publication-quality figures.
         
