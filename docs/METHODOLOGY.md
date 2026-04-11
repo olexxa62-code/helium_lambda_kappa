@@ -119,7 +119,7 @@ All critical exponents from Lipa et al. (2003):
 | Exponent | Value | Physical Quantity | Source |
 |----------|-------|-------------------|--------|
 | ζ | 0.6705 ± 0.0006 | Superfluid density | Goldner et al. (1992), Lipa Table I ref [18] |
-| ν | 0.6717 | Correlation length | Theoretical approximation, Lipa text |
+| ν | 0.667 | Correlation length | Theoretical approximation, Lipa text |
 | α | -0.0127 ± 0.0003 | Specific heat | Lipa et al. (2003), Table II |
 
 **Note on sources**:
@@ -175,7 +175,7 @@ For T < T_λ:
 
 ### 5.2 Critical Observation
 ```
-ζ - ν = 0.6705 - 0.6717 = -0.0012 ≈ 0
+ζ - ν = 0.6705 - 0.667 = +0.0035
 ```
 
 Therefore:
@@ -221,7 +221,7 @@ For each temperature T:
 
 3. Calculate correlation:
 ```
-   Λ(t) = t^(-ν) = t^(-0.6717)
+   Λ(t) = t^(-ν) = t^(-0.667)
 ```
 
 4. Calculate raw κ:
@@ -271,8 +271,8 @@ The choice t_ref = 0.01 (T ≈ 2.15 K) represents a convenient mid-range point. 
 
 **Check 2**: κ plateau
 ```
-Mean κ = 0.999 ± 0.004
-Range: [0.94, 1.02]
+Mean κ = 0.989 ± 0.007
+Range: [0.976, 0.999]
 ```
 
 **Check 3**: Scaling law

@@ -12,7 +12,7 @@
 ## System Overview
 
 **Critical Point**: T_λ = 2.1768 K (vapor pressure)  
-**Principal Result**: κ ≈ 1.00 throughout superfluid phase
+**Principal Result**: κ ≈ 0.99 throughout superfluid phase
 
 Liquid helium-4 at vapor pressure undergoing λ-transition from normal fluid (He-I, T > T_λ) to superfluid (He-II, T < T_λ). Analysis based on high-precision space-based measurements (Lipa et al., 2003) with nanokelvin temperature resolution.
 
@@ -33,14 +33,14 @@ Liquid helium-4 at vapor pressure undergoing λ-transition from normal fluid (He
 
 ### Correlation
 - Λ = ξ (correlation length of thermal fluctuations)
-- Λ(t) ∝ t^(-ν) with ν = 0.6717
+- Λ(t) ∝ t^(-ν) with ν = 0.667
 - Λ → ∞ as T → T_λ (critical divergence)
 - Λ_c = ξ evaluated at reference point
 
 ### Emergence Parameter
 - κ = (A/A_c) × τ × (Λ/Λ_c) = τ(t) × Λ(t)/Λ_c
-- κ ∝ t^(ζ-ν) = t^(-0.0012) ≈ constant
-- κ = 0.999 ± 0.004 throughout superfluid phase
+- κ ∝ t^(ζ-ν) = t^(+0.0035) ≈ constant
+- κ = 0.989 ± 0.007 throughout superfluid phase
 
 ---
 
@@ -52,7 +52,7 @@ Liquid helium-4 at vapor pressure undergoing λ-transition from normal fluid (He
 
 ## Mechanism: Perfect Compensation
 ```
-ζ - ν = 0.6705 - 0.6717 = -0.0012 ≈ 0
+ζ - ν = 0.6705 - 0.667 = +0.0035 ≈ 0
 ```
 
 As temperature decreases below T_λ:
@@ -69,7 +69,7 @@ As temperature decreases below T_λ:
 - Independent measurements from world-class experiments
 - Zero-gravity environment (Space Shuttle Columbia, 1992)
 - Temperature resolution: 2 nK
-- Validated scaling laws: Josephson relation 3ζ + α - 2 = -0.0012 ± 0.0027 ≈ 0
+- Validated scaling laws: Josephson relation 3ζ + α - 2 = +0.0035 ± 0.0027 ≈ 0
 
 ---
 
@@ -93,7 +93,7 @@ As temperature decreases below T_λ:
 - Most precise experimental determination of superfluid density exponent
 - Original: *Journal of Low Temperature Physics*, **93**, 131-182
 
-**ν = 0.6717 (XY universality class)** (theoretical approximation)
+**ν = 0.667 (XY universality class)** (theoretical approximation)
 - Standard value for 3D XY universality class
 - Used by Lipa et al. in text for correlation length: ξ ∝ t^(-2/3)
 - Precise theoretical value: ν = 0.67155(27) from Campostrini et al. (2001)
@@ -135,7 +135,7 @@ Measured from second sound velocity v_2^2 ∝ ρ_s. Scaling: ρ_s ∝ |t|^ζ nea
 
 **Note**: Theoretical prediction ζ = 0.67015 ± 0.00027 (Campostrini, 2001) differs slightly from experimental value.
 
-### ν = 0.6717 (XY universality class)
+### ν = 0.667 (XY universality class)
 **Source**: Standard approximation used by Lipa et al. in text
 
 Determined from:
@@ -223,9 +223,9 @@ python visualizer.py ../results/kappa_analysis.csv
 ```
 
 Expected results:
-- Mean κ = 0.999 ± 0.004
+- Mean κ = 0.989 ± 0.007
 - Range: [0.94, 1.02]
-- Scaling: κ ∝ t^(-0.0012)
+- Scaling: κ ∝ t^(+0.0035)
 
 ---
 

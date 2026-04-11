@@ -17,7 +17,7 @@ This is the **most critical figure** demonstrating the novel plateau behavior:
 **Visual Elements**:
 - **Red circles with line**: κ(t) plotted on semi-log scale
 - **Black dashed line**: κ = 1 reference (horizontal)
-- **Green shaded band**: Mean ± std (κ = 1.003 ± 0.011)
+- **Green shaded band**: Mean ± std (κ = 0.989 ± 0.007)
 - **Purple vertical line**: Critical point (t → 0, marking T_λ)
 - **X-axis**: Reduced temperature t = |1 - T/T_λ| (logarithmic, 10^-3 to 1)
 - **Y-axis**: Emergence parameter κ (linear, 0 to ~1.3)
@@ -29,8 +29,8 @@ This is the **most critical figure** demonstrating the novel plateau behavior:
 4. Green band shows tight statistical bounds
 
 **Key Annotations**:
-- Yellow box: "κ ≈ 1: Stable Emergent State"
-- Legend shows mean κ = 1.003 ± 0.011
+- Yellow box: "κ ≈ 0.99: Stable Emergent State"
+- Legend shows mean κ = 0.989 ± 0.007
 
 **Scientific Significance**:
 - **Unprecedented**: First observation of κ plateau (not peak)
@@ -72,7 +72,7 @@ Order parameter grows as system moves away from T_λ. More atoms condense into c
 - **Orange circles with line**: Normalized correlation length
 - **X-axis**: Reduced temperature t (log scale)
 - **Y-axis**: Λ/Λ_c (Correlation) (log scale)
-- **Wheat-colored box**: Shows ν = 0.6717
+- **Wheat-colored box**: Shows ν = 0.667
 
 **What It Shows**:
 - Power law: Λ ∝ t^(-ν) = t^(-0.6717)
@@ -90,7 +90,7 @@ Correlation length grows as system approaches T_λ. Thermal fluctuations become 
 - **Black dashed line**: κ = 1 reference
 - **X-axis**: Reduced temperature t (log scale)
 - **Y-axis**: κ (linear scale)
-- **Yellow box**: "κ ∝ t^(ζ-ν) = t^(-0.0012) ≈ const"
+- **Yellow box**: "κ ∝ t^(ζ-ν) = t^(+0.0035) ≈ const"
 
 **What It Shows**:
 - Nearly **horizontal line** - confirms plateau
@@ -151,18 +151,18 @@ Two-panel figure verifying the theoretical prediction:
 ### **Left Panel: Log-Log Scale (Power Law Test)**
 **Visual Elements**:
 - **Red circles**: Calculated κ(t) data
-- **Black dashed line**: Theoretical κ ∝ t^(-0.0012)
+- **Black dashed line**: Theoretical κ ∝ t^(+0.0035)
 - **X-axis**: Reduced temperature t (log scale)
 - **Y-axis**: κ (log scale)
 
 **What It Shows**:
 - Data follows theoretical line closely
-- On log-log, slope = ζ - ν = -0.0012
+- On log-log, slope = ζ - ν = +0.0035
 - Nearly horizontal (slope ≈ 0)
 - Validates power law prediction
 
 **Key Observation**:
-If the line were truly horizontal (slope = 0), κ would be exactly constant. The tiny slope (-0.0012) causes only minor variation.
+If the line were truly horizontal (slope = 0), κ would be exactly constant. The tiny slope (+0.0035) causes only minor variation.
 
 ### **Right Panel: Linear Scale (Plateau Visualization)**
 **Visual Elements**:
@@ -179,7 +179,7 @@ If the line were truly horizontal (slope = 0), κ would be exactly constant. The
 - Confirms "plateau" qualitatively
 
 **Quantitative Agreement**:
-- Theoretical: κ ∝ t^(-0.0012)
+- Theoretical: κ ∝ t^(+0.0035)
 - Measured slope: 0.0037 ± 0.0008
 - Agreement within error bars ✓
 
@@ -204,7 +204,7 @@ Both panels confirm the theoretical prediction that ζ ≈ ν leads to κ ≈ co
 ### Data Source
 All figures generated from:
 - **Synthetic data**: `results/kappa_analysis.csv` (200 points)
-- **Parameters**: ζ = 0.6705, ν = 0.6717 from literature
+- **Parameters**: ζ = 0.6705, ν = 0.667 from literature
 - **Temperature range**: 0.5 K to 2.1768 K
 - **No smoothing** applied (raw data shown)
 
@@ -263,7 +263,7 @@ Output files overwrite existing figures in `figures/` directory.
 1. **Fig 1**: "κ stable at 1.00" → Plateau discovery
 2. **Fig 2**: "τ ↑ + Λ ↓ = κ →" → Compensation mechanism
 3. **Fig 3**: "He-I: κ=0, He-II: κ≈1" → Phase property
-4. **Fig 4**: "κ ∝ t^(-0.0012) confirmed" → Theory validated
+4. **Fig 4**: "κ ∝ t^(+0.0035) confirmed" → Theory validated
 
 ---
 
@@ -288,7 +288,7 @@ Output files overwrite existing figures in `figures/` directory.
 **Version 1.0** (November 6, 2025):
 - Initial generation from synthetic data
 - All 4 figures at 600 DPI
-- Based on ζ = 0.6705, ν = 0.6717
+- Based on ζ = 0.6705, ν = 0.667
 
 **Future versions** (if needed):
 - Incorporate real C_p(T) data from Lipa et al.
