@@ -203,6 +203,7 @@ class HeliumLambdaAnalyzer:
             rho_s[mask] = self.superfluid_density(t_super)
             
             xi_raw = self.correlation_length(t_super)
+            xi_norm[mask] = xi_raw
         
         self.data = pd.DataFrame({
             'T': T,
